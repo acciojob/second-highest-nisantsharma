@@ -10,6 +10,11 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			 let uniqueArr = [...new Set(arr)];
+			   uniqueArr.sort((a, b) => b - a);
+
+    // Return the second element in the sorted array
+    return uniqueArr[1];
 			
 		}
 
